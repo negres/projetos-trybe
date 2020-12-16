@@ -11,6 +11,10 @@ body {
   font-size: 62.5%;
 }
 
+button:focus {
+  outline: none;
+}
+
 .header {
   text-align: center;
   width: 100%;
