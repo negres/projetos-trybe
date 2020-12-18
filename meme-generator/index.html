@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css">
   <title>Meme Generator</title>
 </head>
@@ -18,27 +19,31 @@
   <article class="container">
     <section class="input-container">
       Texto:
-      <input maxlength="60" type="text" id="text-input">
+      <input class="textInput" maxlength="60" type="text" id="text-input">
       <br>
       Foto:
       <input type="file" accept="image/*" id="meme-insert">
+      <label for="file">Choose a file</label>
     </section>
-    <section class="memeImageContainer" id="meme-image-container">
-      <img class="memeImage" id="meme-image" src="" alt="">
-      <p class="memeText" id="meme-text"></p>
-      </div>
+    <section class="side-a-side">
+      <section class="memeImageContainer" id="meme-image-container">
+        <img class="memeImage" id="meme-image" src="" alt="">
+        <p class="memeText" id="meme-text"></p>
+        </div>
+      </section>
+      <section class="ready">
+        <img class="img-ready" id="meme-1" src="./imgs/meme1.png" alt="">
+        <img class="img-ready" id="meme-2" src="./imgs/meme2.png" alt="">
+        <img class="img-ready" id="meme-3" src="./imgs/meme3.png" alt="">
+        <img class="img-ready" id="meme-4" src="./imgs/meme4.png" alt="">
+      </section>
     </section>
     <section class="styles">
-      <button class="btn-fire" id="fire">Fire</button>
-      <button class="btn-water" id="water">Water</button>
-      <button class="btn-earth" id="earth">Earth</button>
+      <button class="btn-fire" id="fire">Fire<i class="fas fa-fire"></i></button>
+      <button class="btn-water" id="water">Water<i class="fas fa-water"></i></button>
+      <button class="btn-earth" id="earth">Earth<i class="fas fa-leaf"></i></button>
     </section>
-    <section class="ready">
-      <img class="img-ready" id="meme-1" src="./imgs/meme1.png" alt="">
-      <img class="img-ready" id="meme-2" src="./imgs/meme2.png" alt="">
-      <img class="img-ready" id="meme-3" src="./imgs/meme3.png" alt="">
-      <img class="img-ready" id="meme-4" src="./imgs/meme4.png" alt="">
-    </section>
+
   </article>
 
   <script src="script.js"></script>
