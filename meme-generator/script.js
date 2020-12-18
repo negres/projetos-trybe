@@ -17,6 +17,7 @@ function insertTextImage() {
 
 function insertImage(event) {
   const img = document.querySelector('#meme-image');
+  const labelMemeInsert = document.querySelector('.labelImage');
   const imgs = document.querySelectorAll('.img-ready');
   img.src = URL.createObjectURL(event.target.files[0]);
   img.onload = function () {
