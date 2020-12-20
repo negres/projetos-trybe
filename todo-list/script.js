@@ -86,6 +86,7 @@ function saveTasks() {
     }
     const tasksString = JSON.stringify(tasksArr);
     localStorage.setItem('taskItem', tasksString);
+    alert('Sua lista foi salva!');
   });
 }
 saveTasks();
